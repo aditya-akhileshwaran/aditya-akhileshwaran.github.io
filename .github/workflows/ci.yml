@@ -1,8 +1,12 @@
-name: CI - Test and Build
+name: Build
 
 on:
   push:
-    branches: [ '**' ]
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   test-and-build:
